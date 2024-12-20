@@ -1,6 +1,6 @@
 from rpi_ws281x import *
 
-LED_COUNT = 100
+LED_COUNT = 300
 LED_PIN = 18
 LED_FREQ_HZ = 800000
 LED_DMA = 10
