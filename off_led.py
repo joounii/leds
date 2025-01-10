@@ -17,3 +17,5 @@ def inclusive_range(start, end):
 
 for number in inclusive_range(1, 472):
     strip.setPixelColor(number, Color(0, 0, 0)) # type: ignore
+    
+strip.show()
