@@ -99,6 +99,8 @@ def star_on(color):
     for number in inclusive_range(146, 150):
         strip.setPixelColor(number, Color(0, 0, 0)) # type: ignore
         
+    strip.show()
+        
 def number_turning_on(color):
     for number in inclusive_range(393, 472):
         strip.setPixelColor(number, Color(*color)) # type: ignore
