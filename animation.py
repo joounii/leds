@@ -105,8 +105,10 @@ def number_turning_on(color):
 
 while(True):
     color = (0, 0, 255)
+    number_turning_on(color)
     schweif_turning_on(color)
     star_lines_turning_on(color)
+    star_on(color)
     time.sleep(3)
     off()
     time.sleep(3)
