@@ -22,9 +22,9 @@ def off():
 # Schweif activates from left to right. 
 def schweif_turning_on(color):
     for x in range(0, 35):
-        strip.setPixelColor(282 + x, Color(*color)) # type: ignore
-        strip.setPixelColor(356 + x, Color(*color)) # type: ignore
-        strip.setPixelColor(355 - x, Color(*color)) # type: ignore
+        strip.setPixelColor(281 + x, Color(*color)) # type: ignore
+        strip.setPixelColor(355 + x, Color(*color)) # type: ignore
+        strip.setPixelColor(354 - x, Color(*color)) # type: ignore
         strip.show()
         time.sleep(0.5)
         
