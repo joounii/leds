@@ -25,6 +25,7 @@ def schweif_turning_on(color):
         strip.setPixelColor(282 + x, Color(*color)) # type: ignore
         strip.setPixelColor(356 + x, Color(*color)) # type: ignore
         strip.setPixelColor(355 - x, Color(*color)) # type: ignore
+        time.sleep(1)
         
 
 # star
