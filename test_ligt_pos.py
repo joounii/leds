@@ -12,7 +12,7 @@ strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, 
 strip.begin()
 
 def inclusive_range(start, end):
-    return range(start, end + 1)
+    return range(start - 1, end)
 
 
 # 1. star_lines
