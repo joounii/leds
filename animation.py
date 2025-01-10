@@ -28,6 +28,54 @@ def schweif_turning_on(color):
         strip.show()
         time.sleep(0.1)
         
+# star_lines activate clockwise
+def star_lines_turning_on(color):
+    for number in inclusive_range(210, 229):
+        strip.setPixelColor(number, Color(*color)) # type: ignore
+    strip.show()
+    time.sleep(0.5)
+    
+    for number in inclusive_range(200, 239):
+        strip.setPixelColor(number, Color(*color)) # type: ignore
+    strip.show()
+    time.sleep(0.5)
+    
+    for number in inclusive_range(190, 249):
+        strip.setPixelColor(number, Color(*color)) # type: ignore
+    strip.show()
+    time.sleep(0.5)
+    
+    for number in inclusive_range(180, 259):
+        strip.setPixelColor(number, Color(*color)) # type: ignore
+    strip.show()
+    time.sleep(0.5)
+    
+    for number in inclusive_range(170, 269):
+        strip.setPixelColor(number, Color(*color)) # type: ignore
+    strip.show()
+    time.sleep(0.5)
+    
+    for number in inclusive_range(160, 279):
+        strip.setPixelColor(number, Color(*color)) # type: ignore
+    strip.show()
+    time.sleep(0.5)
+    
+    for number in inclusive_range(160, 279):
+        strip.setPixelColor(number, Color(*color)) # type: ignore
+    for number in inclusive_range(28, 37):
+        strip.setPixelColor(number, Color(*color)) # type: ignore
+    for number in inclusive_range(8, 17):
+        strip.setPixelColor(number, Color(*color)) # type: ignore
+    strip.show()
+    time.sleep(0.5)
+    
+    for number in inclusive_range(160, 279):
+        strip.setPixelColor(number, Color(*color)) # type: ignore
+    for number in inclusive_range(8, 37):
+        strip.setPixelColor(number, Color(*color)) # type: ignore
+    strip.show()
+    time.sleep(0.5)
+        
 
 # star
 def star_on(color):
@@ -55,17 +103,10 @@ def number_turning_on(color):
     for number in inclusive_range(393, 472):
         strip.setPixelColor(number, Color(*color)) # type: ignore
 
-# star_lines activate clockwise
-def star_lines_turning_on(color):
-    for number in inclusive_range(8, 37):
-        strip.setPixelColor(number, Color(*color)) # type: ignore
-    
-    for number in inclusive_range(160, 279):
-        strip.setPixelColor(number, Color(*color)) # type: ignore
-
 while(True):
     color = (0, 0, 255)
     schweif_turning_on(color)
+    star_lines_turning_on(color)
     time.sleep(3)
     off()
     time.sleep(3)
