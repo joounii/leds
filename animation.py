@@ -49,7 +49,7 @@ def number_turning_on(color):
 # star_lines activate clockwise
 def star_lines_turning_on(color):
     for number in inclusive_range(8, 37):
-    strip.setPixelColor(number, Color(*color)) # type: ignore
+        strip.setPixelColor(number, Color(*color)) # type: ignore
     
     for number in inclusive_range(160, 279):
         strip.setPixelColor(number, Color(*color)) # type: ignore
