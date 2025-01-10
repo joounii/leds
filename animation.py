@@ -21,7 +21,7 @@ def off():
 
 # Schweif activates from left to right. 
 def schweif_turning_on(color):
-    for x in inclusive_range(0, 35):
+    for x in inclusive_range(0, 36):
         strip.setPixelColor(282 + x, Color(*color)) # type: ignore
         strip.setPixelColor(356 + x, Color(*color)) # type: ignore
         strip.setPixelColor(355 - x, Color(*color)) # type: ignore
@@ -64,7 +64,7 @@ def star_lines_turning_on(color):
         strip.setPixelColor(number, Color(*color)) # type: ignore
 
 while(True):
-    color = (255, 255, 0)
+    color = (0, 0, 255)
     schweif_turning_on(color)
     time.sleep(3)
     off()
