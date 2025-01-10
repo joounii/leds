@@ -106,8 +106,9 @@ def number_turning_on(color):
         strip.setPixelColor(number, Color(*color)) # type: ignore
 
 while(True):
-    color = (0, 0, 255)
+    color = (0, 255, 255)
     number_turning_on(color)
+    color = (255, 255, 0)
     schweif_turning_on(color)
     star_lines_turning_on(color)
     star_on(color)
