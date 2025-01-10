@@ -25,6 +25,7 @@ def schweif_turning_on(color):
         strip.setPixelColor(282 + x, Color(*color)) # type: ignore
         strip.setPixelColor(356 + x, Color(*color)) # type: ignore
         strip.setPixelColor(355 - x, Color(*color)) # type: ignore
+        strip.show()
         time.sleep(1)
         
 
@@ -65,7 +66,6 @@ def star_lines_turning_on(color):
 while(True):
     color = (255, 255, 0)
     schweif_turning_on(color)
-    strip.show()
     time.sleep(3)
     off()
     time.sleep(3)
