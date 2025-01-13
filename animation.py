@@ -113,6 +113,28 @@ while(True):
     star_lines_turning_on(color)
     star_on(color)
     time.sleep(3)
-    off()
+    
+    color = (255, 160, 0)
+    schweif_turning_on(color)
+    star_lines_turning_on(color)
+    star_on(color)
+    time.sleep(3)
+    
+    color = (255, 130, 160)
+    schweif_turning_on(color)
+    star_lines_turning_on(color)
+    star_on(color)
+    time.sleep(3)
+    
+    color = (110, 0, 255)
+    schweif_turning_on(color)
+    star_lines_turning_on(color)
+    star_on(color)
+    time.sleep(3)
+    
+    color = (170, 255, 90)
+    schweif_turning_on(color)
+    star_lines_turning_on(color)
+    star_on(color)
     time.sleep(3)
 
